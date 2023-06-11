@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="header-wrapper">
+    <nav class="navbar fixed-top navbar-expand-lg w-100 " style=" align-items: center">
+      <div class="container-fluid">
+
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item" style="color: black;">
+            <a class="nav-link" aria-current="page" href="#section1">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section4">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+
+        </ul>
+
+        <a class="navbar-brand mx-auto">ArcticLens</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-icons">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="insta"
+              viewBox="0 0 16 16" style="vertical-align: -webkit-baseline-middle;
+            " data-toggle="tooltip" data-original-title="Instagram">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+            </svg>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-facebook"
+              viewBox="0 0 16 16" style="vertical-align: -webkit-baseline-middle">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-pinterest"
+              viewBox="0 0 16 16" style="vertical-align: -webkit-baseline-middle">
+              <path
+                d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z" />
+            </svg>
+          </li>
+          <li class="nav-item" style="color: black;" id="book-btn">
+            <a class="nav-link" aria-current="page" href="#section5" style="color: white;">Book A Workshop</a>
+          </li>
+          <!-- <button class="btn btn-dark" type="button">
+            <a class="nav-link" href="#section5">Book A Workshop</a>
+          </button> -->
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <section id="section1" class="container-fluid">
+    <h3 class="header1">Offering creative landscape photography workshops</h3>
+    <h4 class="header2">“Capturing the emotion of places through photography.”</h4>
+
+    <div class="row">
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="img-container">
+          <img src="assets/home-img1.jpg" alt="" class="home-images">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="img-container middle-img">
+          <img src="assets/home-img2.jpg" alt="" class="home-images">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="img-container">
+          <img src="assets/home-img3.jpg" alt="" class="home-images">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2">
+
+    <div class="wrapper-section2">
+
+      <div class="about-us-section">
+        <div class="container">
+
+          <div class="about-us-content">
+            <h2>Discover, Learn, and Capture the Arctic</h2>
+            <p>Led by our team of expert photographers, our hands-on workshops provide a unique opportunity to refine
+              your
+              skills, unleash your creativity, and create stunning images in the heart of the Arctic.</p>
+            <p> Embark on an unforgettable learning adventure with ArcticLens Workshops and take your photography to new
+              heights</p>
+          </div>
+
+          <div class="custom-shape-divider-bottom-1686497416">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+              preserveAspectRatio="none">
+              <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                class="shape-fill"></path>
+            </svg>
+          </div>
+
+
+        </div>
+
+      </div>
+      <div class="expert-section">
+        <h2>Meet our experts</h2>
+
+        <div class="expert1">
+          <div class="expert-content">
+            <h3>Samantha Collins</h3>
+            <p>Samantha Collins is a seasoned photographer with a passion for capturing the beauty of the natural world.
+              With over 15 years of experience in landscape and wildlife photography, Samantha has traveled to remote
+              corners of the globe, documenting breathtaking landscapes and fascinating wildlife.</p>
+            <p>As an instructor, Samantha believes in the power of storytelling through images. Her workshops are
+              designed to help aspiring photographers develop their artistic vision and technical skills while immersing
+              themselves in nature's wonders. Samantha's teaching style is patient and supportive, and she enjoys
+              sharing her knowledge and insights with students of all skill levels.</p>
+            <p>In addition to leading photography workshops, Samantha's work has been published in numerous magazines
+              and exhibited in galleries worldwide. She is also a strong advocate for environmental conservation and
+              uses her photography to raise awareness about the importance of preserving our planet's natural beauty.
+            </p>
+            <p>Join Samantha on a photography workshop and learn to capture stunning images that evoke emotion and tell
+              compelling stories.</p>
+          </div>
+
+          <div class="img-container-expert">
+            <img src="assets/expert1.jpg" alt="" class="expert-images">
+          </div>
+
+          <div class="custom-shape-divider-bottom-1686499624-2">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+              preserveAspectRatio="none">
+              <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                class="shape-fill"></path>
+            </svg>
+          </div>
+
+        </div>
+
+
+
+        <div class="expert2">
+          <div class="img-container-expert">
+            <img src="assets/expert2.jpg" alt="" class="expert-images">
+          </div>
+
+          <div class="expert-content">
+            <h3>Michael Rami</h3>
+            <p>Michael Rami is a versatile photographer known for his expertise in portraiture and fashion
+              photography. With a keen eye for detail and a passion for capturing the essence of his subjects, Michael
+              has built a reputation for creating striking and memorable images.</p>
+            <p>With over a decade of experience in the industry, Michael has worked with top fashion magazines, renowned
+              designers, and celebrities. He brings his wealth of knowledge and artistic approach to his photography
+              workshops, where he helps participants unlock their creative potential and master the art of portraiture.
+            </p>
+            <p>Michael's teaching style is energetic and dynamic, blending technical instruction with hands-on practice.
+              He believes in fostering a collaborative learning environment, encouraging students to experiment and push
+              the boundaries of their creativity. Through personalized feedback and guidance, Michael empowers
+              photographers to develop their own unique style.</p>
+            <p>Join Michael on a photography workshop and discover the art of capturing captivating portraits that leave
+              a lasting impression.</p>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- services -->
+  <section id="section3">
+
+    <div class="wrapper-section3">
+
+      <div class="about-us-section">
+        <div class="container">
+
+          <div class="about-us-content">
+            <h2>Learn photography and editing</h2>
+            <h4>We offer 1-1 Virtual workshops in various fields</h4>
+
+          </div>
+
+          <div class="custom-shape-divider-bottom-1686497416">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+              preserveAspectRatio="none">
+              <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                class="shape-fill"></path>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row" id="service-row">
+
+        <div class="col-lg-4 col-sm-6">
+          <div class="service-container">
+            <h2>Nature Photography 1</h2>
+            <p class="service-description">Join our Introduction to Nature Photography workshop and learn the
+              fundamentals of capturing stunning
+              images of the natural world.</p>
+            <p> Discover composition techniques, camera settings, and tips for capturing the
+              beauty of landscapes and wildlife.</p>
+            <p> No prior experience or fancy equipment required.</p>
+            <p> Start your journey as a
+              nature photographer today!</p>
+            <hr>
+            <p>Duration: 2 hours</p>
+            <hr>
+
+            <p>Pricing: $99</p>
+            <hr>
+
+            <p>Virtual & In-Person</p>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6">
+          <div class="service-container">
+            <h2>Editing Masterclass</h2>
+            <p class="service-description">Enhance your post-processing skills with our Editing Masterclass.</p>
+            <p>Learn how
+              to bring out the best in your
+              images through professional editing techniques using industry-standard software.</p>
+            <p>From basic adjustments to
+              advanced retouching, this masterclass will take your photography to the next level.</p>
+            <p>Custom requests can
+              also be discussed in the class.</p>
+            <hr>
+            <p>Duration: 4 hours</p>
+            <hr>
+            <p>Pricing: $175</p>
+            <hr>
+            <p>Virtual & In-Person</p>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6">
+          <div class="service-container">
+            <h2>Photography Review</h2>
+            <p class="service-description-last"> Receive valuable feedback and guidance on your photography through our
+              Photography Review service.</p>
+            <p>
+              Submit your images, and our expert instructors will provide constructive critique and suggestions for
+              improvement.</p>
+            <p>Whether you're a beginner seeking advice or an experienced photographer looking to refine
+              your skills, our review sessions will help you grow as an artist.</p>
+            <hr>
+
+            <p>Duration: 1 hour (up to 5 images)</p>
+            <hr>
+            <p>Pricing: $49</p>
+            <hr>
+            <p>Virtual Only</p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="btn-wrapper">
+        <li style="color: black;" id="book-btn">
+          <a  aria-current="page" href="#section5" style="color: white;">Register Now!</a>
+        </li>
+      </div> -->
+      <!-- <button class="btn btn-dark" type="button" id="button-service">Register Now!</button> -->
+
+    </div>
+
+  </section>
+
+  <section id="section4" class="container-fluid mx-auto">
+    <div class="gallery-header-container">
+
+    </div>
+
+
+    <h1>Our Gallery</h1>
+    <div class="gallery-p1">
+      <h4>Samantha's Photography</h4>
+      <div class="row">
+
+        <div class="col-lg-4 col-sm-6">
+          <div class="img-container">
+            <img src="assets/expert1-g2.jpg" alt="" class="home-images">
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6">
+          <div class="img-container middle-img">
+            <img src="assets/expert1-g1.jpg" alt="" class="home-images">
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6">
+          <div class="img-container">
+            <img src="assets/about-us-img5.jpg" alt="" class="home-images">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-p2">
+      <h4>Michael's Photography</h4>
+      <div class="row">
+
+        <div class="col-lg-4 col-sm-6">
+          <div class="img-container">
+            <img src="assets/about-us-img3.jpg" alt="" class="home-images">
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6">
+          <div class="img-container middle-img">
+            <img src="assets/expert2-g1.jpg" alt="" class="home-images">
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6">
+          <div class="img-container">
+            <img src="assets/about-us-img1.jpg" alt="" class="home-images">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="section5">
+    <!-- registration -->
+    <div class="wrapper-section5">
+
+      <div class="about-us-section">
+        <div class="container">
+
+          <div class="about-us-content">
+            <h2>Register for a Photography Workshop today!</h2>
+          </div>
+
+          <div class="custom-shape-divider-bottom-1686497416">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+              preserveAspectRatio="none">
+              <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                class="shape-fill"></path>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+      <div class="upper-container">
+        <div class="container-lg">
+
+          <form class="row g-3">
+            <div class="col-md-1">
+              <label for="name" class="form-label">Name</label>
+            </div>
+
+            <div class="col-md-4">
+              <input type="text" class="form-control" id="name" required>
+            </div>
+
+            <div class="col-md-2"></div>
+
+            <div class="col-md-1">
+              <label for="subject" class="form-label" id="">Time</label>
+            </div>
+
+            <div class="col-md-4">
+              <select class="form-select" id="choose-time" required>
+                <option value="">Select time</option>
+                <option value="time1">9:00</option>
+                <option value="time2">10:00 AM</option>
+                <option value="time3">11:00 AM</option>
+                <option value="time4">12:00 PM</option>
+                <option value="time5">1:00 PM</option>
+                <option value="time6">2:00 PM</option>
+                <option value="time7">3:00 PM</option>
+                <option value="time8">4:00 PM</option>
+              </select>
+            </div>
+
+
+
+
+            <div class="col-md-1">
+              <label for="email" class="form-label">Email</label>
+            </div>
+
+            <div class="col-md-4">
+              <input type="email" class="form-control" id="email" required>
+            </div>
+
+            <div class="col-md-2"></div>
+
+            <div class="col-md-1">
+              <label for="date" class="form-label">Date</label>
+            </div>
+
+            <div class="col-md-4">
+              <input type="datetime-local" class="form-control" id="choose-date" placeholder="Click Here to Select Date"
+                required>
+            </div>
+
+            <div class="col-md-1">
+              <label for="subject" class="form-label">Instructor</label>
+            </div>
+            <div class="col-md-4">
+              <select class="form-select" id="instructors" required>
+                <option value="">Select an Instructor</option>
+                <option value="expert1">Samantha Collins</option>
+                <option value="expert2">Michael Rami</option>
+              </select>
+            </div>
+
+            <div class="col-md-2"></div>
+
+            <div class="col-md-1">
+              <label for="subject" class="form-label">Workshop</label>
+            </div>
+            <div class="col-md-4">
+              <select class="form-select" id="workshop" required>
+                <option value="">Select a workshop</option>
+                <option value="photography1">Nature Photography 1</option>
+                <option value="editing">Editing Masterclass</option>
+                <option value="review">Photography Review</option>
+              </select>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+
+            </div>
+
+            <div class="col-md-12"></div>
+            <div class="col-md-5"></div>
+
+
+            <div class="col-md-2 text-center">
+              <!-- <button type="button" value="buttonValue" class="btn btn-info btn-lg" onclick="if(formIsValid()) { $('#triggerModal').click(); }">Submit</button> -->
+
+              <button type="submit" class="btn btn-dark">Validate Data</button>
+              <button type="button" id="triggerModal" hidden value="Submit" class="btn btn-info btn-lg" data-toggle="modal" data-target="#exampleModal"></button>  
+
+            </div>
+            <div class="col-md-5"></div>
+
+          </form>
+        </div>
+
+
+        </select>
+
+
+      </div>
+    </section>
+      <section id="contact">
+
+      <div class="lower-container">
+
+        <div class="about-us-section">
+          <div class="container-fluid">
+  
+            <div class="about-us-content">
+              <div class="container-lg" >
+                <h2 style="text-align: center;">Contact Us</h2>
+
+
+                <div class="row g-3" >
+              <div class="col-md-6">
+              </div>
+
+              <div class="col-md-6">
+                <h4>Hours of Service</h4>
+              </div>
+
+              <div class="col-md-6">
+                Location: 345 Laurier Ave East, Ottawa, ON, Canada
+              </div>
+
+              <div class="col-md-6">
+                Weekdays: 09:00 - 16:00
+              </div>
+
+              <div class="col-md-6">
+                Email: arcticLens@gmail.com
+              </div>
+              <div class="col-md-6">
+                Weekends: 10:00 - 15:00
+              </div>
+
+              <div class="col-md-6">
+                Telephone Number: 613-582-5648
+              </div>
+              <div class="col-md-6">
+                Public Holidays: Closed
+              </div>
+            </div>
+
+          </div>
+
+
+
+            </div>
+  
+            <!-- <div class="custom-shape-divider-bottom-1686497416">
+              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                  d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                  class="shape-fill"></path>
+              </svg>
+            </div>
+          </div> -->
+  
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+
+    </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <script>
+    $('body').scrollspy({ target: '.navbar' });
+
+    $(document).on('click', 'a.nav-link', function (event) {
+      event.preventDefault();
+      $('html, body').animate({ scrollTop: $($.attr(this, 'href')).offset().top }, 800);
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script>
+    flatpickr("input[type=datetime-local]", {});
+  </script>
+
+
+</body>
+
+</html>
