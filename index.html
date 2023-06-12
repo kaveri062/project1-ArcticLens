@@ -478,7 +478,7 @@
 
             <div class="col-md-4 text-center">
 
-              <button type="submit" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal" onclick="passValue()">Confirm Registration</button>
+              <button type="submit" class="btn btn-dark" onclick="passValue()">Confirm Registration</button>
 
             </div>
             <div class="col-md-5"></div>
@@ -617,6 +617,8 @@
 
   <script>//function to get registration data and pass it to popup for confirmation
     function passValue(){
+      event.preventDefault();
+      
       var name = document.getElementById('name').value;
       document.getElementById('nameValue').textContent = name;
 
@@ -632,6 +634,10 @@
 
       var time = document.getElementById('choose-time').value;
       document.getElementById('timeValue').textContent = time;
+
+      $('#exampleModal').modal('show');
+      return false;
+
       
     }
   </script>
