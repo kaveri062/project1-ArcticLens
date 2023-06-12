@@ -355,3 +355,17 @@ hr{
     font-size: large;
     
 }
+
+
+/* exampleModal */
+#exampleModal{
+    padding: 2rem;
+    margin-top: 100px;
+
+}
+.modal-header{
+    text-align: center;
+    padding: 1rem;
+    padding-left: 7rem;
+
+}
